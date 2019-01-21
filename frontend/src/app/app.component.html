@@ -1,0 +1,24 @@
+<div class="container">
+  <!-- header component -->
+  <div class="row">
+    <div class="col-12">
+      <h1>Список объявлений</h1>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- list component -->
+  <div class="row">
+    <div class="col-12">
+      <div *ngFor="let ad of adverts">
+        <div class="row">
+          <div class="col-8"><a href="">{{ ad.header }}</a></div>
+          <div class="col-2">{{ ad.city }}</div>
+          <div class="col-2">{{ ad.owner }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
