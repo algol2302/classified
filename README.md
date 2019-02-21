@@ -1,4 +1,4 @@
-# For running
+# To run
 
 virtualenv --python=/usr/bin/python3 .venv
 
