@@ -37,13 +37,13 @@ class AdvertAPI(ModelViewSet):
             user = User.objects.get(id=self.request.user)
         except:
             user = User.objects.get(username='Anonymous')
-        
+
         hit, created = Hit.objects.get_or_create(
-            ip = ip,
-            user = user,
-            hitcount = obj.hit_count,
-            session = 'sss',
-            user_agent = 'api',
+            ip=ip,
+            user=user,
+            hitcount=obj.hit_count,
+            session='sss',
+            user_agent='api',
         )
 
         if created:
